@@ -30,7 +30,7 @@
                 <h5>PLEASE GIVE US A MOMENT TO SORT THINGS OUT</h5>
                 
                 <p> Powered by <a href="http://bytefury.com" target="_blank">Bytefury</a> </p>
-                
+                hello there
                 <div class="social-icons">
                     <a href="/auth/facebook" class="btn btn-default text-primary btn-icon"><i class="icon-fa icon-fa-facebook"></i></a>
                     <a href="/auth/google" class="btn btn-default text-danger btn-icon"><i class="icon-fa icon-fa-google"></i></a>

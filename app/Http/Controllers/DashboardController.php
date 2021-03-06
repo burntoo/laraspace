@@ -22,4 +22,9 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard.finance');
     }
+
+   public function CostumeDesigner() 
+    {
+         return view('admin.dashboard.MyDesign');
+    }
 }

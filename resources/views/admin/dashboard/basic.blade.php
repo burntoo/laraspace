@@ -47,6 +47,18 @@
                     </span>
                 </a>
             </div>
+
+            <div class="col-md-12 col-lg-6 col-xl-3">
+                <a class="dashbox" href="#">
+                    <i class="icon-fa icon-fa-heart text-info"></i>
+                    <span class="title">
+                      100
+                    </span>
+                    <span class="desc">
+                      LIKES
+                    </span>
+                </a>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-xl-6 mt-2">
