@@ -112,9 +112,114 @@ class AdminTest extends TestCase
 
     //COMPONENTS
 
-    public function testUrlBasicUIdatatables()
+    public function testUrlComponentDatatables()
     {
         $response = $this->get('/admin/components/datatables');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentNotifications()
+    {
+        $response = $this->get('/admin/components/notifications');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentNestedList()
+    {
+        $response = $this->get('/admin/components/nestable-list');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentTree()
+    {
+        $response = $this->get('/admin/components/nestable-tree');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentCopper()
+    {
+        $response = $this->get('/admin/components/image-cropper');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentZoom()
+    {
+        $response = $this->get('/admin/components/zoom');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentCalender()
+    {
+        $response = $this->get('/admin/components/calendar');
+
+        $response->assertStatus(200);
+    }
+
+
+    public function testUrlComponentRatingStar()
+    {
+        $response = $this->get('/admin/components/ratings/star');
+
+        $response->assertStatus(200);
+    }
+
+
+    public function testUrlComponentBarRating()
+    {
+        $response = $this->get('/admin/components/ratings/bar');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlComponentContact()
+    {
+        $response = $this->get('/admin/components/contacts');
+
+        $response->assertStatus(200);
+    }
+
+    //CHARTS
+
+
+    public function testUrlChartJs()
+    {
+        $response = $this->get('/admin/charts/chartjs');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlSparklines()
+    {
+        $response = $this->get('/admin/charts/sparklines');
+
+        $response->assertStatus(200);
+    }
+
+
+    public function testUrlAmCharts()
+    {
+        $response = $this->get('/admin/charts/amcharts');
+
+        $response->assertStatus(200);
+    }
+
+
+    public function testUrlMorris()
+    {
+        $response = $this->get('/admin/charts/morris');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlGauges()
+    {
+        $response = $this->get('/admin/charts/gauges');
 
         $response->assertStatus(200);
     }

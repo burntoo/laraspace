@@ -20,10 +20,31 @@ class RegisterTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function testUrlRegister2()
+    {
+        $response = $this->get('/admin/register-2');
+
+        $response->assertStatus(200);
+    }
+
+    public function testUrlRegister3()
+    {
+        $response = $this->get('/admin/register-3');
+
+        $response->assertStatus(200);
+    }
+
     public function testForgotPassword(){
         $response = $this->get('/forgot-password');
 
         $response->assertStatus(200);
+    }
+
+    public function testUrl404()
+    {
+        $response = $this->get('/admin/404');
+
+        $response->assertStatus(404);
     }
 
     public function testRegisterDetails(){
